@@ -1,2 +1,4 @@
 **/.vagrant
 **/camunda-h2-dbs
+
+**/*.retry
