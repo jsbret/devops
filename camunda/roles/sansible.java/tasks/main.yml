@@ -1,0 +1,13 @@
+---
+
+- include: build.yml
+  tags:
+    - build
+
+  ## no configuration.
+- name: configure.yml
+  shell: echo "" > /tmp/sansible.java.configure
+  args:
+    creates: /tmp/sansible.java.configure
+  tags:
+    - configure
