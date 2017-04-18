@@ -5,10 +5,9 @@
   become_method: sudo
 
   vars:
-    java:
-      version: 8
+    java_version: 8
 
   roles:
     - dependencies
-    - sansible.java
+    - williamyeh.oracle-java
     - camunda-tomcat

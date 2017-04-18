@@ -1,4 +1,6 @@
 **/.vagrant
 **/camunda-h2-dbs
+**/williamyeh.oracle-java
+**/*.log
 
 **/*.retry

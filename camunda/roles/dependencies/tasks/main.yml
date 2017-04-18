@@ -9,3 +9,11 @@
 #  - libjna-java
 #  - sysstat
 #  - python-software-properties
+  when: ansible_distribution == 'Debian' or ansible_distribution == 'Ubuntu'
+
+- yum: name={{ item }} state=latest update_cache=yes
+  with_items:
+  - git
+  - curl
+  - vim
+  when: ansible_distribution == 'CentOS' or ansible_distribution == 'Red Hat Enterprise Linux'
